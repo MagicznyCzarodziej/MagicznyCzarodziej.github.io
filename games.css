@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Megrim|Rajdhani&subset=latin,latin-ext);
+html {
+	height: 100%;
+}
+body {
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: #000;
+	height: 100%;
+	border-top: 5px solid #066fe5;
+	box-sizing: border-box;
+	font-family: Rajdhani;
+}
+#header {
+	height: 100px;
+	background-color: #eee;
+	color: #444;
+	font-family: Megrim;
+	font-size: 55px;
+	line-height: 100px;
+}
+#header a {
+	text-decoration: none;
+	color: #000;
+}
+#games {
+	background-color: #ddd;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+#games a {
+	color: #000;
+	text-decoration: none;
+	font-size: 30px;
+}
+#games div {
+	background-color: #ccc;
+	margin: 0 30px;
+	padding: 20px;
+	border-radius: 8px;
+}
+#games a:hover {
+	color: #666;
+}
+#games img {
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin-right: 10px;
+}
+ul {
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	text-align: left
+}
+li {
+	padding: 5px 0;
+}
