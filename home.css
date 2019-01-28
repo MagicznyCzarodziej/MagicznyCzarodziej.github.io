@@ -19,13 +19,41 @@ a {
     transform: translateY(-50%);
 }
 #header {
-    font-size: 80px;
-    margin-bottom: 30px;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+#links {
+    margin-top: 6rem;
 }
 #links a {
     color: #444;
+    display: block;
+    font-size: 4.5rem;
+    margin: 1rem 0;
 }
 #links a:hover {
 	transition-duration: 0.2s;
 	color: #BA0009;
+}
+#links span {
+    display: none;
+}
+
+@media (min-width: 1050px) {
+    #header {
+        font-size: 4rem;
+        font-weight: normal;
+    }
+    #links {
+        margin-top: 0;
+    }
+    #links a {
+        display: inline;
+        margin: 0;
+        font-size: 2rem;
+    }
+    #links span {
+        display: inline;
+    }
 }

@@ -5,14 +5,14 @@ body {
 	font-family: Rajdhani;
 }
 #header {
-	height: 100px;
 	background-color: #eee;
 	color: #444;
 	font-family: 'Major Mono Display';
 	text-transform: lowercase;
-	font-size: 55px;
-	line-height: 100px;
-	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+	font-size: 5rem;
+	line-height: 5rem;
+	box-shadow: 0 0.05rem 0.25rem rgba(0, 0, 0, 0.5);
+	padding: 2rem 0;
 	text-transform: lowercase;
 }
 #header a {
@@ -21,52 +21,54 @@ body {
 }
 #projects {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 40px;
+	padding: 2rem;
 }
 #projects::-webkit-scrollbar { 
     display: none; 
 }
 .project {
 	background-color: #fafafa;
-	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-	width: 300px;
-	margin: 20px;
+	box-shadow: 0.05rem 0.05rem 0.25rem rgba(0, 0, 0, 0.5);
+	margin: 1rem;
 }
 .cover {
-	width: 300px;
-	max-height: 200px;
-	padding: 10px 10px 0px 10px;
+	padding: 2rem 2rem 0px 2rem;
 }
 .cover img {
-	width: 280px;
+	width: 100%;
 	display: block;
-	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0.05rem 0.05rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 .content {
-	padding: 20px;
-	font-size: 20px;
+	padding: 2rem;
+	font-size: 2.5rem;
 	text-align: left;
 }
 .title {
-	font-size: 30px;
+	font-size: 3.5rem;
 	font-weight: bold;
 }
+.title a {
+	color: #000;
+	text-decoration: none;
+}
 .title img {
-	width: 20px;
+	width: 2.5rem;
 	opacity: 0.3;
 }
 .title img:hover {
 	opacity: 1;
 }
-.description {
+.description,
+.technologies ul li {
 	color: #222;
-	padding-left: 10px;
+	padding-left: 1rem;
 }
 .technologies {
-	margin-top: 10px;
+	margin-top: 0.5rem;
 }
 .technologies span {
 	font-weight: bold;
@@ -76,7 +78,38 @@ body {
 	margin: 0;
 	padding: 0;
 }
-.technologies ul li {
-	padding-left: 10px;
-	font-size: 20px;
+
+@media (min-width: 1050px) {
+	#header {
+		font-size: 2.8rem;
+		padding: 0;
+	}
+	#projects {
+		flex-direction: row;
+	}
+	.project {
+		width: 15rem;
+	}
+	.cover {
+		width: 15rem;
+		max-height: 10rem;
+		padding: 0.5rem 0.5rem 0px 0.5rem;
+	}
+	.cover img {
+		width: 14rem;
+	}
+	.content {
+		padding: 1rem;
+		font-size: 1rem;
+	}
+	.title {
+		font-size: 1.5rem;
+	}
+	.title img {
+		width: 1rem;
+	}
+	.description,
+	.technologies ul li {
+		padding-left: 0.5rem;
+	}
 }
